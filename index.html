@@ -10,6 +10,8 @@
   Content notes (kept per readme instructions — apparent issues flagged, not silently altered):
   1. A "Publications" section was added for completeness, sourced from own-bib.bib in this
      repository. It was NOT present in the original index.html. Please verify journal details.
+     DOI links were added per publications.tex; the 2015 "A class of tests…" entry has no DOI
+     in publications.tex, so it remains unlinked.
   2. Bib entry "anjana2014classoftests" declares year 2015 -> presented as 2015 (as per source).
   3. Bib entry "sankaran2016nonparametric" is commented out in own-bib.bib -> deliberately omitted.
   4. awards.tex also lists "Second Prize in All Kerala Project Competition" (2010); it is absent
@@ -713,6 +715,22 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 600; }
   color: var(--gold);
 }
 .pub-title { font-weight: 600; font-size: 0.97rem; color: var(--ink); }
+.pub-link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+.pub-link:hover { color: var(--gold-strong); border-color: var(--gold-line); }
+.pub-link .ext {
+  display: inline-block;
+  width: 12px; height: 12px;
+  margin-left: 7px;
+  opacity: 0.45;
+  vertical-align: baseline;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.pub-link:hover .ext { opacity: 1; transform: translate(1px, -1px); }
 .pub-meta { font-size: 0.86rem; color: var(--ink-mute); margin-top: 3px; }
 .pub-journal { font-style: italic; }
 .pub-badge {
@@ -1268,63 +1286,63 @@ details.msc-detail .msc-body { padding: 4px 20px 18px; }
           <li class="pub-item">
             <span class="pub-year">2026</span>
             <div>
-              <span class="pub-title">Cause-specific hazards model under covariate measurement error</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1007/s11222-025-10813-5" target="_blank" rel="noopener noreferrer">Cause-specific hazards model under covariate measurement error<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">A. Jayanagasri&nbsp;&amp;&nbsp;S.&nbsp;Anjana &middot; <span class="pub-journal">Statistics and Computing</span> 36(1), 54.</div>
             </div>
           </li>
           <li class="pub-item">
             <span class="pub-year">2025</span>
             <div>
-              <span class="pub-title">Jackknife empirical likelihood ratio test for log-symmetric distribution using probability weighted moments</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1080/02331888.2025.2534830" target="_blank" rel="noopener noreferrer">Jackknife empirical likelihood ratio test for log-symmetric distribution using probability weighted moments<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">S.&nbsp;Anjana&nbsp;&amp;&nbsp;S.&nbsp;K.&nbsp;Kattumannil &middot; <span class="pub-journal">Statistics</span>, pp. 1&ndash;13.</div>
             </div>
           </li>
           <li class="pub-item">
             <span class="pub-year">2025</span>
             <div>
-              <span class="pub-title">Semiparametric analysis of competing risks data with missing causes of failure and covariate measurement error</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1080/02664763.2025.2512965" target="_blank" rel="noopener noreferrer">Semiparametric analysis of competing risks data with missing causes of failure and covariate measurement error<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">A. Jayanagasri&nbsp;&amp;&nbsp;S.&nbsp;Anjana &middot; <span class="pub-journal">Journal of Applied Statistics</span> <span class="pub-badge">Accepted</span></div>
             </div>
           </li>
           <li class="pub-item">
             <span class="pub-year">2024</span>
             <div>
-              <span class="pub-title">Semiparametric analysis of competing risks data with covariate measurement error</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1007/s00180-024-01502-4" target="_blank" rel="noopener noreferrer">Semiparametric analysis of competing risks data with covariate measurement error<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">A. Jayanagasri&nbsp;&amp;&nbsp;S.&nbsp;Anjana &middot; <span class="pub-journal">Computational Statistics</span>, pp. 1&ndash;32.</div>
             </div>
           </li>
           <li class="pub-item">
             <span class="pub-year">2023</span>
             <div>
-              <span class="pub-title">U-statistics for left truncated and right censored data</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1080/02331888.2023.2217314" target="_blank" rel="noopener noreferrer">U-statistics for left truncated and right censored data<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">K.&nbsp;K.&nbsp;Sudheesh, S.&nbsp;Anjana&nbsp;&amp;&nbsp;M.&nbsp;Xie &middot; <span class="pub-journal">Statistics</span> 57(4), 900&ndash;917.</div>
             </div>
           </li>
           <li class="pub-item">
             <span class="pub-year">2019</span>
             <div>
-              <span class="pub-title">Test for independence between time to failure and cause of failure in competing risks with k causes</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1080/10485252.2018.1563699" target="_blank" rel="noopener noreferrer">Test for independence between time to failure and cause of failure in competing risks with k causes<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">S.&nbsp;Anjana, I.&nbsp;Dewan&nbsp;&amp;&nbsp;K.&nbsp;K.&nbsp;Sudheesh &middot; <span class="pub-journal">Journal of Nonparametric Statistics</span> 31(2), 322&ndash;339.</div>
             </div>
           </li>
           <li class="pub-item">
             <span class="pub-year">2019</span>
             <div>
-              <span class="pub-title">Modelling and analysis of recall-based competing risks data</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1080/02664763.2018.1561833" target="_blank" rel="noopener noreferrer">Modelling and analysis of recall-based competing risks data<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">S.&nbsp;Anjana&nbsp;&amp;&nbsp;I.&nbsp;Dewan &middot; <span class="pub-journal">Journal of Applied Statistics</span> 46(9), 1621&ndash;1635.</div>
             </div>
           </li>
           <li class="pub-item">
             <span class="pub-year">2016</span>
             <div>
-              <span class="pub-title">Proportional cause-specific reversed hazards model</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1080/10485252.2015.1112010" target="_blank" rel="noopener noreferrer">Proportional cause-specific reversed hazards model<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">P.&nbsp;G.&nbsp;Sankaran&nbsp;&amp;&nbsp;S.&nbsp;Anjana &middot; <span class="pub-journal">Journal of Nonparametric Statistics</span> 28(1), 68&ndash;83.</div>
             </div>
           </li>
           <li class="pub-item">
             <span class="pub-year">2015</span>
             <div>
-              <span class="pub-title">Parametric analysis of lifetime data with multiple causes of failure using cause-specific reversed hazard rates</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1177/0008068320150303" target="_blank" rel="noopener noreferrer">Parametric analysis of lifetime data with multiple causes of failure using cause-specific reversed hazard rates<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">S.&nbsp;Anjana&nbsp;&amp;&nbsp;P.&nbsp;G.&nbsp;Sankaran &middot; <span class="pub-journal">Calcutta Statistical Association Bulletin</span> 67(3&ndash;4), 129&ndash;142.</div>
             </div>
           </li>
@@ -1338,14 +1356,14 @@ details.msc-detail .msc-body { padding: 4px 20px 18px; }
           <li class="pub-item">
             <span class="pub-year">2014</span>
             <div>
-              <span class="pub-title">Additive reversed hazard rates models</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.1080/01966324.2014.943600" target="_blank" rel="noopener noreferrer">Additive reversed hazard rates models<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">P.&nbsp;G.&nbsp;Sankaran, A.&nbsp;M.&nbsp;Variyath&nbsp;&amp;&nbsp;S.&nbsp;Anjana &middot; <span class="pub-journal">American Journal of Mathematical and Management Sciences</span> 33(4), 315&ndash;329.</div>
             </div>
           </li>
           <li class="pub-item">
             <span class="pub-year">2014</span>
             <div>
-              <span class="pub-title">Modeling lifetime data with multiple causes using cause-specific reversed hazard rates</span>
+              <span class="pub-title"><a class="pub-link" href="https://doi.org/10.6092/issn.1973-2201/5307" target="_blank" rel="noopener noreferrer">Modeling lifetime data with multiple causes using cause-specific reversed hazard rates<svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></span>
               <div class="pub-meta">P.&nbsp;G.&nbsp;Sankaran&nbsp;&amp;&nbsp;S.&nbsp;Anjana &middot; <span class="pub-journal">Statistica</span> 74(3), 315&ndash;334.</div>
             </div>
           </li>
